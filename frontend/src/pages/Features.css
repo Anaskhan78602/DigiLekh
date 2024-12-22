@@ -1,0 +1,109 @@
+/* Features Section */
+.features-section {
+    background:#CBDCEB ;
+    padding: 60px 20px;
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .features-header h1 {
+    font-size: 3rem;
+    color: #0e2954;
+    margin-bottom: 20px;
+  }
+  
+  .features-header p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  /* Features Container */
+  .features-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Feature Card */
+  .feature-card {
+    background:#001F3F;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Card Hover Effect */
+  .feature-card:hover {
+    transform: scale(1.1); /* Enlarge the hovered card */
+    box-shadow: 10px 10px 10px  #0e2c5d;
+    z-index: 10; /* Ensure it appears on top */
+  }
+  
+  /* Hover effect on the icon */
+  .feature-card .icon {
+    font-size: 3rem;
+    color: #61a4fc;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover .icon {
+    transform: scale(1.1); /* Slight scale effect on the icon */
+  }
+  
+  .feature-card h3 {
+    font-size: 1.8rem;
+    color: lightblue;
+    margin-bottom: 10px;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  /* Action Button */
+  .action-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #ffb200;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .action-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .features-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .features-header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .features-header p {
+      font-size: 1rem;
+    }
+  }
+  
