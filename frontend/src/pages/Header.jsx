@@ -10,7 +10,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center px-6 py-4">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2 text-xl font-semibold">
-          <img src={logo} alt="Digilekh Logo" className="w-10 h-10 rounded-full" />
+          <img src={logo} alt="Digilekh Logo" className="w-16 h-16 rounded-full" />
         </Link>
 
         {/* Navigation Links */}

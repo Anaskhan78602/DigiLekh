@@ -7,6 +7,8 @@ const IntroVideo = ({ onVideoEnd }) => {
 
   useEffect(() => {
     const video = videoRef.current;
+      // Increase playback speed
+      video.playbackRate = 3.5; // 2x speed. Adjust this value as needed.
 
     const handleVideoEnd = () => {
       video.classList.add('fade-out'); // Add fade-out effect

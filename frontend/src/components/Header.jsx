@@ -31,7 +31,7 @@ const Header = () => {
       <div className="container mx-auto px-4 lg:px-8 flex justify-between items-center py-4">
         {/* Logo Section */}
         <Link to="/api/blog" className="text-2xl font-semibold text-black">
-          <img className="w-14 h-14 rounded-full object-cover" src={logo} alt="Logo" />
+          <img className="w-16 h-16 rounded-full object-cover" src={logo} alt="Logo" />
         </Link>
 
         <nav className="flex items-center space-x-6">

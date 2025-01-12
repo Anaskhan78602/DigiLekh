@@ -37,7 +37,7 @@ async function handleUserSignup(req, res) {
         res.cookie('authToken', token, {
             httpOnly: true,
             secure: process.env.NODE_ENV === 'production',
-            maxAge: 3600000, // 1 hour
+            maxAge: 15*24*60*60*1000, // 1 hour
         });
 
         return res.status(201).json({ message: 'User created successfully', user, token });
